@@ -11,7 +11,7 @@ const fs   = require('fs');
 const path = require('path');
 const url  = require('url');
 
-const PORT     = 5000;
+const PORT     = process.env.PORT || 5000;
 const DB_FILE  = path.join(__dirname, 'licenses.json');
 const DEV_PASS = 'dev@muqtada2025'; // ← غيّرها
 
