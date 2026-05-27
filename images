@@ -1,0 +1,732 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a1200"/><stop offset="100%" stop-color="#2d2000"/></linearGradient>
+    <linearGradient id="rice" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f5e090"/><stop offset="100%" stop-color="#d4b850"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- big serving dish -->
+  <ellipse cx="200" cy="215" rx="175" ry="65" fill="#d4c8a0"/>
+  <ellipse cx="200" cy="208" rx="165" ry="57" fill="#e8d880"/>
+  <!-- rice mound -->
+  <ellipse cx="200" cy="200" rx="150" ry="50" fill="url(#rice)"/>
+  <!-- rice texture dots -->
+  <ellipse cx="160" cy="195" rx="3" ry="5" fill="#f8f0b0" opacity="0.7" transform="rotate(20)"/>
+  <ellipse cx="185" cy="188" rx="3" ry="5" fill="#f8f0b0" opacity="0.7" transform="rotate(-15)"/>
+  <ellipse cx="210" cy="193" rx="3" ry="5" fill="#f8f0b0" opacity="0.7" transform="rotate(10)"/>
+  <ellipse cx="240" cy="190" rx="3" ry="5" fill="#f8f0b0" opacity="0.7" transform="rotate(-20)"/>
+  <ellipse cx="175" cy="205" rx="3" ry="5" fill="#f8f0b0" opacity="0.7"/>
+  <ellipse cx="225" cy="202" rx="3" ry="5" fill="#f8f0b0" opacity="0.7"/>
+  <!-- lamb on top -->
+  <ellipse cx="200" cy="175" rx="70" ry="40" fill="#8a3010" filter="url(#glow)"/>
+  <path d="M155 165 Q200 148 245 165" fill="#6a2008" opacity="0.7"/>
+  <ellipse cx="175" cy="170" rx="15" ry="10" fill="#a03818"/>
+  <ellipse cx="225" cy="170" rx="15" ry="10" fill="#a03818"/>
+  <!-- nuts on rice -->
+  <ellipse cx="145" cy="210" rx="8" ry="6" fill="#6b4226"/>
+  <ellipse cx="255" cy="207" rx="8" ry="6" fill="#7a5030"/>
+  <ellipse cx="195" cy="215" rx="8" ry="5" fill="#9a7040"/>
+  <!-- steam -->
+  <path d="M185 145 Q190 125 183 110" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2.5"/>
+  <path d="M215 138 Q220 118 213 103" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2.5"/>
+  <text x="200" y="292" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">قوزي على الأرز</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a0808"/><stop offset="100%" stop-color="#1a0a08"/></linearGradient>
+    <linearGradient id="soup" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#cc3322"/><stop offset="100%" stop-color="#8a1a0a"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- bowl shadow -->
+  <ellipse cx="200" cy="260" rx="130" ry="18" fill="rgba(0,0,0,0.5)"/>
+  <!-- bowl base -->
+  <path d="M75 210 Q75 268 200 268 Q325 268 325 210 Z" fill="#d0c0a0"/>
+  <!-- bowl rim -->
+  <ellipse cx="200" cy="208" rx="126" ry="28" fill="#e8d8b0"/>
+  <ellipse cx="200" cy="204" rx="118" ry="22" fill="#f0e0c0"/>
+  <!-- soup surface -->
+  <ellipse cx="200" cy="204" rx="112" ry="20" fill="url(#soup)" filter="url(#glow)"/>
+  <!-- oil shimmer on soup -->
+  <ellipse cx="175" cy="200" rx="30" ry="8" fill="#ff5533" opacity="0.4" transform="rotate(-15,175,200)"/>
+  <ellipse cx="230" cy="202" rx="20" ry="6" fill="#ff6644" opacity="0.3"/>
+  <!-- herbs floating -->
+  <circle cx="160" cy="200" r="5" fill="#5aaa28"/>
+  <circle cx="240" cy="198" r="4" fill="#5aaa28"/>
+  <circle cx="200" cy="196" r="4" fill="#5aaa28"/>
+  <!-- steam wisps -->
+  <path d="M175 178 Q180 158 173 143" fill="none" stroke="rgba(255,200,180,0.35)" stroke-width="3"/>
+  <path d="M200 172 Q205 152 198 137" fill="none" stroke="rgba(255,200,180,0.3)" stroke-width="3"/>
+  <path d="M225 176 Q230 156 223 141" fill="none" stroke="rgba(255,200,180,0.28)" stroke-width="3"/>
+  <!-- bread on side -->
+  <rect x="295" y="220" width="40" height="30" rx="6" fill="#d4a840"/>
+  <rect x="298" y="224" width="34" height="6" rx="2" fill="#c09030" opacity="0.5"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">مرقة حمراء</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a1200"/><stop offset="100%" stop-color="#2a1a00"/></linearGradient>
+    <linearGradient id="rice" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f0c040"/><stop offset="100%" stop-color="#c89020"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="220" rx="170" ry="58" fill="#d8c888"/>
+  <ellipse cx="200" cy="213" rx="160" ry="50" fill="#ead898"/>
+  <!-- golden saffron rice -->
+  <ellipse cx="200" cy="205" rx="145" ry="48" fill="url(#rice)" filter="url(#glow)"/>
+  <!-- rice grain texture -->
+  <line x1="155" y1="195" x2="162" y2="205" stroke="#f8d860" stroke-width="2" opacity="0.6"/>
+  <line x1="175" y1="190" x2="182" y2="200" stroke="#f8d860" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="193" x2="207" y2="203" stroke="#f8d860" stroke-width="2" opacity="0.6"/>
+  <line x1="220" y1="191" x2="227" y2="201" stroke="#f8d860" stroke-width="2" opacity="0.6"/>
+  <line x1="240" y1="196" x2="247" y2="206" stroke="#f8d860" stroke-width="2" opacity="0.6"/>
+  <!-- meat pieces on rice -->
+  <ellipse cx="165" cy="195" rx="25" ry="15" fill="#8a3010"/>
+  <ellipse cx="200" cy="190" rx="22" ry="13" fill="#7a2808"/>
+  <ellipse cx="235" cy="196" rx="22" ry="14" fill="#8a3010"/>
+  <!-- saffron strands on top -->
+  <line x1="180" y1="178" x2="190" y2="185" stroke="#ff8c00" stroke-width="2" opacity="0.8"/>
+  <line x1="210" y1="176" x2="215" y2="183" stroke="#ff8c00" stroke-width="2" opacity="0.8"/>
+  <!-- steam -->
+  <path d="M195 165 Q200 145 193 132" fill="none" stroke="rgba(255,200,100,0.3)" stroke-width="3"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="14" fill="#c9953a">تمن زعفران باللحم</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#150a00"/><stop offset="100%" stop-color="#2a1500"/></linearGradient>
+    <linearGradient id="bread" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8c070"/><stop offset="100%" stop-color="#b88a30"/></linearGradient>
+    <filter id="sh"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- wrap/sandwich -->
+  <!-- bread bottom -->
+  <ellipse cx="200" cy="240" rx="150" ry="30" fill="#c8902a"/>
+  <!-- filling layers -->
+  <rect x="80" y="170" width="240" height="75" rx="18" fill="url(#bread)" filter="url(#sh)"/>
+  <!-- lettuce visible -->
+  <path d="M90 210 Q120 198 160 210 Q200 222 240 210 Q270 200 310 210 L310 220 Q270 215 240 225 Q200 237 160 225 Q120 215 90 225 Z" fill="#4a9a20"/>
+  <!-- meat layer -->
+  <rect x="85" y="188" width="230" height="25" rx="8" fill="#9a4820"/>
+  <rect x="90" y="193" width="220" height="5" rx="2" fill="#7a3010" opacity="0.5"/>
+  <rect x="90" y="203" width="220" height="5" rx="2" fill="#7a3010" opacity="0.5"/>
+  <!-- tomato -->
+  <ellipse cx="145" cy="200" rx="18" ry="10" fill="#cc3322" opacity="0.8"/>
+  <ellipse cx="255" cy="200" rx="18" ry="10" fill="#cc3322" opacity="0.8"/>
+  <!-- sauce -->
+  <path d="M90 215 Q200 225 310 215" fill="none" stroke="#ffe8a0" stroke-width="3" opacity="0.7"/>
+  <!-- top bread -->
+  <path d="M80 172 Q200 150 320 172 Q320 190 200 190 Q80 190 80 172Z" fill="#d4a040"/>
+  <!-- sesame seeds -->
+  <circle cx="155" cy="165" r="3" fill="#f0d880" opacity="0.6"/>
+  <circle cx="200" cy="160" r="3" fill="#f0d880" opacity="0.6"/>
+  <circle cx="245" cy="163" r="3" fill="#f0d880" opacity="0.6"/>
+  <text x="200" y="292" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">شاورما عراقية</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#100808"/><stop offset="100%" stop-color="#2a1010"/></linearGradient>
+    <linearGradient id="meat" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#a03020"/><stop offset="100%" stop-color="#6a1808"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="225" rx="165" ry="52" fill="#e8ddd0"/>
+  <ellipse cx="200" cy="220" rx="155" ry="45" fill="#f5ede0"/>
+  <!-- meat chunks -->
+  <rect x="85" y="175" width="55" height="45" rx="12" fill="url(#meat)" filter="url(#glow)"/>
+  <rect x="90" y="182" width="45" height="7" rx="3" fill="#8b1a08" opacity="0.6"/>
+  <rect x="90" y="198" width="45" height="7" rx="3" fill="#8b1a08" opacity="0.6"/>
+  <rect x="155" y="168" width="55" height="48" rx="12" fill="#9a2818" filter="url(#glow)"/>
+  <rect x="160" y="176" width="45" height="7" rx="3" fill="#8b1a08" opacity="0.6"/>
+  <rect x="160" y="192" width="45" height="7" rx="3" fill="#8b1a08" opacity="0.6"/>
+  <rect x="225" y="173" width="50" height="44" rx="12" fill="url(#meat)" filter="url(#glow)"/>
+  <rect x="230" y="181" width="40" height="7" rx="3" fill="#8b1a08" opacity="0.6"/>
+  <!-- herbs -->
+  <path d="M130 175 Q140 162 150 172" fill="#3a7a18"/>
+  <circle cx="270" cy="178" r="8" fill="#4a8a28"/>
+  <text x="200" y="288" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">تكّة اللحم</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#080e05"/><stop offset="100%" stop-color="#101a08"/></linearGradient>
+    <linearGradient id="juice" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#88cc20"/><stop offset="100%" stop-color="#448800"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="268" rx="55" ry="9" fill="rgba(0,0,0,0.4)"/>
+  <path d="M162 110 L150 260 Q200 275 250 260 L238 110 Z" fill="url(#juice)" filter="url(#glow)"/>
+  <path d="M162 110 L150 260 Q200 275 250 260 L238 110 Z" fill="rgba(255,255,255,0.07)"/>
+  <!-- ice -->
+  <rect x="172" y="160" width="25" height="25" rx="5" fill="rgba(255,255,255,0.35)" transform="rotate(8)"/>
+  <rect x="208" y="175" width="22" height="22" rx="5" fill="rgba(255,255,255,0.3)" transform="rotate(-6)"/>
+  <!-- apple slice on rim -->
+  <path d="M238 112 Q255 95 272 112 Q268 135 255 140 Q242 135 238 112 Z" fill="#88dd30"/>
+  <path d="M255 140 L255 112" stroke="#66aa18" stroke-width="1.5"/>
+  <circle cx="255" cy="95" r="3" fill="#5a3010"/>
+  <!-- glass rim -->
+  <ellipse cx="200" cy="112" rx="38" ry="7" fill="rgba(255,255,255,0.2)"/>
+  <path d="M166 122 L162 240" stroke="rgba(255,255,255,0.15)" stroke-width="7" stroke-linecap="round"/>
+  <!-- straw -->
+  <rect x="220" y="88" width="7" height="135" rx="3.5" fill="#ffaa40" opacity="0.8" transform="rotate(3,220,88)"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="14" fill="#c9953a">عصير تفاح طازج</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0800"/><stop offset="100%" stop-color="#1a1000"/></linearGradient>
+    <linearGradient id="bak" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8c060"/><stop offset="100%" stop-color="#9a7020"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- decorative plate -->
+  <ellipse cx="200" cy="258" rx="160" ry="35" fill="#c8a858"/>
+  <ellipse cx="200" cy="250" rx="150" ry="28" fill="#daba68"/>
+  <!-- baklava pieces (diamond shapes) -->
+  <!-- row 1 -->
+  <path d="M108 235 L130 210 L152 235 L130 260 Z" fill="url(#bak)" filter="url(#glow)"/>
+  <path d="M152 235 L174 210 L196 235 L174 260 Z" fill="#c8a840" filter="url(#glow)"/>
+  <path d="M196 235 L218 210 L240 235 L218 260 Z" fill="url(#bak)" filter="url(#glow)"/>
+  <path d="M240 235 L262 210 L284 235 L262 260 Z" fill="#c8a840" filter="url(#glow)"/>
+  <!-- top pieces row 2 -->
+  <path d="M130 210 L152 185 L174 210 L152 235 Z" fill="#daba58"/>
+  <path d="M174 210 L196 185 L218 210 L196 235 Z" fill="#e8ca68"/>
+  <path d="M218 210 L240 185 L262 210 L240 235 Z" fill="#daba58"/>
+  <!-- layer lines on each piece -->
+  <line x1="113" y1="235" x2="147" y2="235" stroke="#8a6010" stroke-width="1" opacity="0.5"/>
+  <line x1="120" y1="228" x2="140" y2="228" stroke="#8a6010" stroke-width="1" opacity="0.5"/>
+  <line x1="157" y1="235" x2="191" y2="235" stroke="#8a6010" stroke-width="1" opacity="0.5"/>
+  <line x1="201" y1="235" x2="235" y2="235" stroke="#8a6010" stroke-width="1" opacity="0.5"/>
+  <line x1="245" y1="235" x2="279" y2="235" stroke="#8a6010" stroke-width="1" opacity="0.5"/>
+  <!-- pistachio on each diamond center -->
+  <ellipse cx="130" cy="235" rx="7" ry="5" fill="#4a8a18"/>
+  <ellipse cx="174" cy="235" rx="7" ry="5" fill="#5a9a22"/>
+  <ellipse cx="218" cy="235" rx="7" ry="5" fill="#4a8a18"/>
+  <ellipse cx="262" cy="235" rx="7" ry="5" fill="#5a9a22"/>
+  <ellipse cx="152" cy="210" rx="7" ry="5" fill="#4a8a18"/>
+  <ellipse cx="196" cy="210" rx="7" ry="5" fill="#5a9a22"/>
+  <ellipse cx="240" cy="210" rx="7" ry="5" fill="#4a8a18"/>
+  <!-- honey shine -->
+  <path d="M115 225 Q165 212 215 222 Q258 230 285 218" fill="none" stroke="#f0c020" stroke-width="2" opacity="0.5"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">بقلاوة عراقية</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0808"/><stop offset="100%" stop-color="#1a0f00"/></linearGradient>
+    <linearGradient id="rice" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e8c060"/><stop offset="50%" stop-color="#f5d878"/><stop offset="100%" stop-color="#c8980a"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="222" rx="172" ry="58" fill="#c8b870"/>
+  <ellipse cx="200" cy="215" rx="162" ry="50" fill="#ddc878"/>
+  <!-- biryani mound -->
+  <ellipse cx="200" cy="205" rx="148" ry="50" fill="url(#rice)" filter="url(#glow)"/>
+  <!-- coloured rice streaks (orange,yellow,white) -->
+  <path d="M155 195 Q175 188 200 193 Q225 198 250 193" fill="none" stroke="#ff8c00" stroke-width="4" opacity="0.5"/>
+  <path d="M160 208 Q185 202 210 207 Q230 212 248 207" fill="none" stroke="#fff8e1" stroke-width="3" opacity="0.4"/>
+  <!-- chicken pieces -->
+  <ellipse cx="170" cy="200" rx="22" ry="14" fill="#b87020"/>
+  <ellipse cx="230" cy="198" rx="22" ry="14" fill="#a86010"/>
+  <!-- mint leaves -->
+  <ellipse cx="200" cy="188" rx="18" ry="9" fill="#3a8a20" opacity="0.8"/>
+  <ellipse cx="153" cy="210" rx="12" ry="6" fill="#4a9a28" opacity="0.7"/>
+  <!-- fried onions (dark golden) -->
+  <ellipse cx="245" cy="212" rx="20" ry="8" fill="#c87820" opacity="0.8"/>
+  <!-- steam -->
+  <path d="M190 162 Q196 142 189 128" fill="none" stroke="rgba(255,220,100,0.3)" stroke-width="3"/>
+  <path d="M212 158 Q218 138 211 124" fill="none" stroke="rgba(255,220,100,0.25)" stroke-width="3"/>
+  <text x="200" y="292" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">برياني عراقي</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#100800"/><stop offset="100%" stop-color="#1e1000"/></linearGradient>
+    <linearGradient id="bun" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d49040"/><stop offset="100%" stop-color="#a06020"/></linearGradient>
+    <filter id="sh"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- shadow -->
+  <ellipse cx="200" cy="260" rx="145" ry="22" fill="rgba(0,0,0,0.4)"/>
+  <!-- bottom bun -->
+  <rect x="68" y="232" width="264" height="30" rx="15" fill="#b87828"/>
+  <!-- lettuce -->
+  <path d="M65 228 Q120 212 200 220 Q280 228 335 216 L335 233 Q280 243 200 238 Q120 233 65 245 Z" fill="#4aaa20"/>
+  <!-- tomato -->
+  <rect x="70" y="214" width="260" height="16" rx="5" fill="#dd3322" opacity="0.9"/>
+  <!-- cheese -->
+  <rect x="72" y="204" width="256" height="13" rx="4" fill="#f0c030"/>
+  <!-- patty -->
+  <rect x="74" y="184" width="252" height="24" rx="10" fill="#5a1a08" filter="url(#sh)"/>
+  <rect x="78" y="189" width="244" height="5" rx="2" fill="#4a1208" opacity="0.6"/>
+  <rect x="78" y="199" width="244" height="5" rx="2" fill="#4a1208" opacity="0.6"/>
+  <!-- top bun -->
+  <path d="M70 185 Q200 140 330 185 L330 200 Q200 200 70 200 Z" fill="url(#bun)" filter="url(#sh)"/>
+  <!-- sesame seeds on bun -->
+  <ellipse cx="155" cy="162" rx="6" ry="4" fill="#f0d898" transform="rotate(-15,155,162)"/>
+  <ellipse cx="200" cy="153" rx="6" ry="4" fill="#f0d898"/>
+  <ellipse cx="245" cy="162" rx="6" ry="4" fill="#f0d898" transform="rotate(15,245,162)"/>
+  <ellipse cx="178" cy="158" rx="5" ry="3" fill="#f0d898" transform="rotate(-10)"/>
+  <ellipse cx="222" cy="156" rx="5" ry="3" fill="#f0d898" transform="rotate(10)"/>
+  <text x="200" y="294" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="14" fill="#c9953a">برغر الطائي</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0d08"/><stop offset="100%" stop-color="#1a1500"/></linearGradient>
+    <linearGradient id="chk" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d4a020"/><stop offset="100%" stop-color="#8a5a00"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- plate -->
+  <ellipse cx="200" cy="230" rx="165" ry="52" fill="#e5ddd0"/>
+  <ellipse cx="200" cy="225" rx="155" ry="44" fill="#f0e8d8"/>
+  <!-- 3 skewer sticks side by side -->
+  <line x1="100" y1="125" x2="300" y2="245" stroke="#8b6914" stroke-width="5" stroke-linecap="round"/>
+  <line x1="130" y1="115" x2="330" y2="235" stroke="#8b6914" stroke-width="5" stroke-linecap="round"/>
+  <line x1="70" y1="135" x2="270" y2="255" stroke="#8b6914" stroke-width="5" stroke-linecap="round"/>
+  <!-- chicken pieces -->
+  <ellipse cx="155" cy="165" rx="28" ry="18" fill="url(#chk)" filter="url(#glow)" transform="rotate(-35,155,165)"/>
+  <ellipse cx="195" cy="175" rx="28" ry="18" fill="#c89018" filter="url(#glow)" transform="rotate(-35,195,175)"/>
+  <ellipse cx="235" cy="195" rx="28" ry="18" fill="url(#chk)" filter="url(#glow)" transform="rotate(-35,235,195)"/>
+  <!-- lemon -->
+  <ellipse cx="90" cy="228" rx="22" ry="15" fill="#e8e040"/>
+  <line x1="90" y1="215" x2="90" y2="241" stroke="#c8c020" stroke-width="1"/>
+  <line x1="77" y1="228" x2="103" y2="228" stroke="#c8c020" stroke-width="1"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">سيخ الدجاج</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a1a08"/><stop offset="100%" stop-color="#182a10"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="225" rx="165" ry="52" fill="#e0d8c8"/>
+  <ellipse cx="200" cy="219" rx="155" ry="44" fill="#ece4d0"/>
+  <!-- dolma rolls -->
+  <ellipse cx="130" cy="195" rx="30" ry="18" fill="#3a7a20" filter="url(#glow)"/>
+  <ellipse cx="130" cy="196" rx="22" ry="12" fill="#4a9a28"/>
+  <line x1="108" y1="195" x2="152" y2="195" stroke="#2a5a15" stroke-width="2"/>
+  <ellipse cx="200" cy="188" rx="30" ry="18" fill="#2d6a18" filter="url(#glow)"/>
+  <ellipse cx="200" cy="189" rx="22" ry="12" fill="#3d8a22"/>
+  <line x1="178" y1="188" x2="222" y2="188" stroke="#1d4a10" stroke-width="2"/>
+  <ellipse cx="270" cy="195" rx="30" ry="18" fill="#3a7a20" filter="url(#glow)"/>
+  <ellipse cx="270" cy="196" rx="22" ry="12" fill="#4a9a28"/>
+  <line x1="248" y1="195" x2="292" y2="195" stroke="#2a5a15" stroke-width="2"/>
+  <!-- second row -->
+  <ellipse cx="163" cy="213" rx="28" ry="16" fill="#3d7a22"/>
+  <ellipse cx="237" cy="210" rx="28" ry="16" fill="#3d7a22"/>
+  <!-- tomato sauce -->
+  <ellipse cx="200" cy="228" rx="100" ry="18" fill="#cc4422" opacity="0.5"/>
+  <text x="200" y="288" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">دولمة عراقية</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1000"/><stop offset="100%" stop-color="#1a1800"/></linearGradient>
+    <linearGradient id="wrap" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8d898"/><stop offset="100%" stop-color="#c8b070"/></linearGradient>
+    <filter id="sh"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- bread wrap -->
+  <ellipse cx="200" cy="225" rx="155" ry="45" fill="url(#wrap)"/>
+  <!-- filling -->
+  <rect x="85" y="175" width="230" height="60" rx="20" fill="#c8b878" filter="url(#sh)"/>
+  <!-- falafel balls -->
+  <circle cx="145" cy="197" r="22" fill="#6b4a10"/>
+  <circle cx="145" cy="197" r="16" fill="#5a3a08"/>
+  <!-- falafel texture -->
+  <circle cx="137" cy="190" r="4" fill="#7a5418" opacity="0.5"/>
+  <circle cx="153" cy="192" r="3" fill="#7a5418" opacity="0.5"/>
+  <circle cx="142" cy="204" r="3" fill="#7a5418" opacity="0.5"/>
+  <circle cx="200" cy="195" r="22" fill="#6b4a10"/>
+  <circle cx="200" cy="195" r="16" fill="#5a3a08"/>
+  <circle cx="192" cy="188" r="4" fill="#7a5418" opacity="0.5"/>
+  <circle cx="208" cy="190" r="3" fill="#7a5418" opacity="0.5"/>
+  <circle cx="255" cy="198" r="22" fill="#6b4a10"/>
+  <circle cx="255" cy="198" r="16" fill="#5a3a08"/>
+  <!-- parsley/greens -->
+  <path d="M110 215 Q145 205 180 215 Q215 225 250 215 Q270 208 290 215" fill="none" stroke="#5aaa20" stroke-width="5" opacity="0.7"/>
+  <!-- tahini drizzle -->
+  <path d="M120 210 Q165 225 200 218 Q240 210 278 222" fill="none" stroke="#e8d870" stroke-width="3" opacity="0.6"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">فلافل بالخضروات</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a0e08"/><stop offset="100%" stop-color="#141e0a"/></linearGradient>
+    <linearGradient id="soup" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8a7820"/><stop offset="100%" stop-color="#5a4a10"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="260" rx="130" ry="18" fill="rgba(0,0,0,0.4)"/>
+  <path d="M75 210 Q75 268 200 268 Q325 268 325 210 Z" fill="#c8b898"/>
+  <ellipse cx="200" cy="208" rx="126" ry="28" fill="#e0cca8"/>
+  <ellipse cx="200" cy="204" rx="118" ry="22" fill="#f0ddb8"/>
+  <!-- freekeh soup (greenish brown) -->
+  <ellipse cx="200" cy="204" rx="112" ry="20" fill="url(#soup)" filter="url(#glow)"/>
+  <!-- freekeh grains texture -->
+  <ellipse cx="165" cy="200" rx="3" ry="5" fill="#6a5818" opacity="0.6" transform="rotate(20,165,200)"/>
+  <ellipse cx="185" cy="197" rx="3" ry="5" fill="#6a5818" opacity="0.6" transform="rotate(-10,185,197)"/>
+  <ellipse cx="205" cy="201" rx="3" ry="5" fill="#6a5818" opacity="0.6" transform="rotate(15,205,201)"/>
+  <ellipse cx="225" cy="198" rx="3" ry="5" fill="#6a5818" opacity="0.6" transform="rotate(-20,225,198)"/>
+  <ellipse cx="240" cy="202" rx="3" ry="5" fill="#6a5818" opacity="0.6" transform="rotate(5)"/>
+  <!-- chicken piece visible -->
+  <ellipse cx="190" cy="202" rx="18" ry="10" fill="#c89030" opacity="0.8"/>
+  <!-- herbs -->
+  <circle cx="230" cy="197" r="5" fill="#4aaa20" opacity="0.7"/>
+  <circle cx="155" cy="200" r="4" fill="#4aaa20" opacity="0.7"/>
+  <!-- steam -->
+  <path d="M188 175 Q193 155 186 142" fill="none" stroke="rgba(180,200,100,0.3)" stroke-width="3"/>
+  <path d="M212 170 Q217 150 210 137" fill="none" stroke="rgba(180,200,100,0.25)" stroke-width="3"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">شوربة الفريكة</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1000"/>
+      <stop offset="100%" stop-color="#2d1a00"/>
+    </linearGradient>
+    <linearGradient id="chk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c87820"/>
+      <stop offset="100%" stop-color="#8b4500"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- plate -->
+  <ellipse cx="200" cy="220" rx="165" ry="55" fill="#e8ddd0"/>
+  <ellipse cx="200" cy="215" rx="155" ry="48" fill="#f5ede0"/>
+  <!-- chicken body -->
+  <ellipse cx="200" cy="190" rx="100" ry="65" fill="url(#chk)" filter="url(#glow)"/>
+  <!-- grill marks -->
+  <path d="M130 170 Q160 165 190 170 Q220 175 250 170" fill="none" stroke="#5a2a00" stroke-width="5" stroke-linecap="round"/>
+  <path d="M125 185 Q155 180 185 185 Q215 190 245 185" fill="none" stroke="#5a2a00" stroke-width="5" stroke-linecap="round"/>
+  <path d="M130 200 Q160 195 190 200 Q220 205 250 200" fill="none" stroke="#5a2a00" stroke-width="5" stroke-linecap="round"/>
+  <!-- chicken legs sticking out -->
+  <ellipse cx="140" cy="225" rx="18" ry="30" fill="#b86010" transform="rotate(-20,140,225)"/>
+  <circle cx="130" cy="245" r="10" fill="#8b4000"/>
+  <ellipse cx="260" cy="225" rx="18" ry="30" fill="#b86010" transform="rotate(20,260,225)"/>
+  <circle cx="270" cy="245" r="10" fill="#8b4000"/>
+  <!-- herbs/garnish -->
+  <ellipse cx="200" cy="175" rx="15" ry="8" fill="#4a7a20"/>
+  <circle cx="175" cy="195" r="6" fill="#6aaa30"/>
+  <circle cx="225" cy="195" r="6" fill="#6aaa30"/>
+  <!-- steam -->
+  <path d="M190 140 Q195 120 188 105" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="3"/>
+  <path d="M210 135 Q215 115 208 100" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="16" fill="#c9953a">دجاج مشوي</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d0a0a"/>
+      <stop offset="100%" stop-color="#4a1510"/>
+    </linearGradient>
+    <linearGradient id="meat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B2500"/>
+      <stop offset="100%" stop-color="#5C1500"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- grill lines glow -->
+  <rect x="0" y="230" width="400" height="70" fill="#1a0505"/>
+  <!-- fire glow -->
+  <ellipse cx="200" cy="235" rx="180" ry="20" fill="#ff4500" opacity="0.3" filter="url(#glow)"/>
+  <!-- grill bars -->
+  <line x1="60" y1="220" x2="340" y2="220" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+  <line x1="60" y1="234" x2="340" y2="234" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+  <line x1="60" y1="248" x2="340" y2="248" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+  <!-- meat pieces -->
+  <rect x="80" y="175" width="70" height="48" rx="10" fill="url(#meat)" filter="url(#glow)"/>
+  <rect x="85" y="182" width="60" height="8" rx="3" fill="#a03020" opacity="0.5"/>
+  <rect x="85" y="198" width="60" height="8" rx="3" fill="#a03020" opacity="0.5"/>
+  <rect x="160" y="168" width="80" height="52" rx="10" fill="#7a2010" filter="url(#glow)"/>
+  <rect x="165" y="176" width="70" height="8" rx="3" fill="#a03020" opacity="0.5"/>
+  <rect x="165" y="194" width="70" height="8" rx="3" fill="#a03020" opacity="0.5"/>
+  <rect x="260" y="178" width="65" height="44" rx="10" fill="#8B2500" filter="url(#glow)"/>
+  <!-- smoke wisps -->
+  <path d="M130 165 Q135 145 128 130" fill="none" stroke="rgba(200,200,200,0.3)" stroke-width="3"/>
+  <path d="M200 158 Q205 135 198 120" fill="none" stroke="rgba(200,200,200,0.25)" stroke-width="3"/>
+  <!-- spice dots -->
+  <circle cx="100" cy="187" r="2" fill="#c9953a"/>
+  <circle cx="115" cy="195" r="2" fill="#c9953a"/>
+  <circle cx="180" cy="182" r="2" fill="#c9953a"/>
+  <!-- label -->
+  <text x="200" y="285" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="16" fill="#c9953a">مشاوي مشكّلة</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0808"/><stop offset="100%" stop-color="#1a1000"/></linearGradient>
+    <linearGradient id="tea" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c85020"/><stop offset="100%" stop-color="#7a2808"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- istikan (Iraqi tea glass) shadow -->
+  <ellipse cx="200" cy="270" rx="38" ry="8" fill="rgba(0,0,0,0.5)"/>
+  <!-- saucer -->
+  <ellipse cx="200" cy="260" rx="70" ry="14" fill="#c8a850"/>
+  <ellipse cx="200" cy="257" rx="62" ry="11" fill="#daba60"/>
+  <!-- istikan glass (hourglass shape) -->
+  <path d="M173 155 L168 230 Q200 242 232 230 L227 155 Q200 168 173 155 Z" fill="url(#tea)" filter="url(#glow)"/>
+  <!-- glass highlight -->
+  <path d="M173 155 L168 230 Q200 242 232 230 L227 155 Q200 168 173 155 Z" fill="rgba(255,255,255,0.07)"/>
+  <!-- waist of istikan -->
+  <ellipse cx="200" cy="193" rx="28" ry="8" fill="#9a3818" opacity="0.4"/>
+  <!-- tea surface -->
+  <ellipse cx="200" cy="157" rx="28" ry="7" fill="#dd6030" opacity="0.7"/>
+  <!-- glass rim gold -->
+  <ellipse cx="200" cy="155" rx="28" ry="7" fill="none" stroke="#d4a830" stroke-width="2"/>
+  <ellipse cx="200" cy="230" rx="32" ry="8" fill="none" stroke="#d4a830" stroke-width="2"/>
+  <!-- steam -->
+  <path d="M190 138 Q195 118 188 105" fill="none" stroke="rgba(255,180,100,0.35)" stroke-width="2.5"/>
+  <path d="M210 135 Q215 115 208 102" fill="none" stroke="rgba(255,180,100,0.3)" stroke-width="2.5"/>
+  <!-- cardamom pods on saucer -->
+  <ellipse cx="155" cy="257" rx="8" ry="5" fill="#6a8a20" transform="rotate(-20,155,257)"/>
+  <ellipse cx="248" cy="258" rx="8" ry="5" fill="#6a8a20" transform="rotate(15,248,258)"/>
+  <!-- sugar cubes -->
+  <rect x="260" y="200" width="18" height="18" rx="3" fill="#f5f0e0"/>
+  <rect x="263" y="203" width="12" height="4" rx="1" fill="#e8e0cc" opacity="0.5"/>
+  <rect x="263" y="211" width="12" height="4" rx="1" fill="#e8e0cc" opacity="0.5"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="14" fill="#c9953a">شاي عراقي بالهيل</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#150a00"/>
+      <stop offset="100%" stop-color="#2a1500"/>
+    </linearGradient>
+    <linearGradient id="keb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9B3010"/>
+      <stop offset="50%" stop-color="#c05020"/>
+      <stop offset="100%" stop-color="#9B3010"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- plate -->
+  <ellipse cx="200" cy="235" rx="170" ry="50" fill="#e5ddd0"/>
+  <ellipse cx="200" cy="230" rx="160" ry="42" fill="#f2e8d8"/>
+  <!-- skewer stick -->
+  <line x1="50" y1="150" x2="350" y2="200" stroke="#b8860b" stroke-width="6" stroke-linecap="round"/>
+  <!-- kebab meat pieces -->
+  <ellipse cx="120" cy="163" rx="35" ry="22" fill="url(#keb)" transform="rotate(-10,120,163)"/>
+  <rect x="100" y="155" width="40" height="5" rx="2" fill="#7a2010" opacity="0.5"/>
+  <rect x="100" y="165" width="40" height="5" rx="2" fill="#7a2010" opacity="0.5"/>
+  <ellipse cx="185" cy="175" rx="35" ry="22" fill="#a03515" transform="rotate(-8,185,175)"/>
+  <rect x="165" y="167" width="40" height="5" rx="2" fill="#7a2010" opacity="0.5"/>
+  <rect x="165" y="177" width="40" height="5" rx="2" fill="#7a2010" opacity="0.5"/>
+  <ellipse cx="255" cy="187" rx="35" ry="22" fill="url(#keb)" transform="rotate(-8,255,187)"/>
+  <rect x="235" y="179" width="40" height="5" rx="2" fill="#7a2010" opacity="0.5"/>
+  <!-- veggies between kebabs -->
+  <circle cx="158" cy="170" r="10" fill="#cc4400" opacity="0.8"/>
+  <circle cx="225" cy="182" r="10" fill="#228b22" opacity="0.8"/>
+  <!-- garnish on plate -->
+  <ellipse cx="200" cy="235" rx="140" ry="25" fill="#e8e0cc" opacity="0.5"/>
+  <ellipse cx="140" cy="238" rx="20" ry="8" fill="#f0f0c0" opacity="0.7"/>
+  <ellipse cx="265" cy="238" rx="20" ry="8" fill="#d2c27a" opacity="0.8"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="16" fill="#c9953a">كباب عراقي</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#100800"/><stop offset="100%" stop-color="#201000"/></linearGradient>
+    <linearGradient id="bread" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8c868"/><stop offset="100%" stop-color="#b89030"/></linearGradient>
+    <filter id="sh"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- bread bottom half -->
+  <rect x="60" y="225" width="280" height="28" rx="14" fill="#c89030"/>
+  <!-- kofta inside -->
+  <rect x="62" y="200" width="276" height="28" rx="8" fill="#7a2808" filter="url(#sh)"/>
+  <rect x="68" y="206" width="264" height="5" rx="2" fill="#5a1a04" opacity="0.5"/>
+  <rect x="68" y="217" width="264" height="5" rx="2" fill="#5a1a04" opacity="0.5"/>
+  <!-- veggies -->
+  <rect x="64" y="192" width="272" height="12" rx="5" fill="#4a9a20" opacity="0.8"/>
+  <ellipse cx="155" cy="196" rx="15" ry="7" fill="#dd3322" opacity="0.7"/>
+  <ellipse cx="245" cy="196" rx="15" ry="7" fill="#dd3322" opacity="0.7"/>
+  <!-- tahini sauce -->
+  <path d="M68 195 Q135 200 200 196 Q265 192 332 196" fill="none" stroke="#e8d870" stroke-width="2.5" opacity="0.7"/>
+  <!-- top bread half -->
+  <path d="M58 192 Q200 165 342 192 L342 202 Q200 202 58 202 Z" fill="url(#bread)" filter="url(#sh)"/>
+  <!-- sesame -->
+  <ellipse cx="160" cy="180" rx="5" ry="3" fill="#f0e090" transform="rotate(-10)"/>
+  <ellipse cx="200" cy="175" rx="5" ry="3" fill="#f0e090"/>
+  <ellipse cx="240" cy="179" rx="5" ry="3" fill="#f0e090" transform="rotate(10)"/>
+  <text x="200" y="293" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">ساندويش الكفتة</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#080e08"/><stop offset="100%" stop-color="#101a10"/></linearGradient>
+    <linearGradient id="drink" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d4ee60"/><stop offset="100%" stop-color="#88aa10"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="268" rx="55" ry="9" fill="rgba(0,0,0,0.4)"/>
+  <!-- tall glass -->
+  <path d="M160 105 L148 262 Q200 275 252 262 L240 105 Z" fill="url(#drink)" filter="url(#glow)"/>
+  <!-- glass walls highlight -->
+  <path d="M160 105 L148 262 Q200 275 252 262 L240 105 Z" fill="rgba(255,255,255,0.08)"/>
+  <!-- ice cubes -->
+  <rect x="170" y="155" width="28" height="28" rx="5" fill="rgba(255,255,255,0.35)" transform="rotate(10,170,155)"/>
+  <rect x="205" y="170" width="25" height="25" rx="5" fill="rgba(255,255,255,0.3)" transform="rotate(-8,205,170)"/>
+  <rect x="185" y="195" width="22" height="22" rx="5" fill="rgba(255,255,255,0.28)" transform="rotate(5,185,195)"/>
+  <!-- mint leaves -->
+  <ellipse cx="190" cy="115" rx="15" ry="8" fill="#2a9a20" opacity="0.9"/>
+  <ellipse cx="210" cy="112" rx="12" ry="7" fill="#3aaa28" opacity="0.9"/>
+  <!-- lemon slice on rim -->
+  <circle cx="245" cy="108" r="20" fill="#e8e040"/>
+  <circle cx="245" cy="108" r="15" fill="#eeec50"/>
+  <path d="M245 93 L245 123 M230 108 L260 108 M232 97 L258 119 M232 119 L258 97" stroke="#c8c020" stroke-width="1"/>
+  <!-- glass rim -->
+  <ellipse cx="200" cy="107" rx="40" ry="7" fill="rgba(255,255,255,0.2)"/>
+  <path d="M165 118 L161 230" stroke="rgba(255,255,255,0.15)" stroke-width="7" stroke-linecap="round"/>
+  <!-- straw -->
+  <rect x="182" y="85" width="7" height="130" rx="3.5" fill="#aaddff" opacity="0.7" transform="rotate(-5,182,85)"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="14" fill="#c9953a">ليمونادة بالنعناع</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#100a00"/><stop offset="100%" stop-color="#1e1200"/></linearGradient>
+    <linearGradient id="soup" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d4800a"/><stop offset="100%" stop-color="#8a4800"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="260" rx="130" ry="18" fill="rgba(0,0,0,0.4)"/>
+  <path d="M75 210 Q75 268 200 268 Q325 268 325 210 Z" fill="#c8b898"/>
+  <ellipse cx="200" cy="208" rx="126" ry="28" fill="#e0cca8"/>
+  <ellipse cx="200" cy="204" rx="118" ry="22" fill="#f0ddb8"/>
+  <!-- lentil soup -->
+  <ellipse cx="200" cy="204" rx="112" ry="20" fill="url(#soup)" filter="url(#glow)"/>
+  <!-- swirl pattern -->
+  <path d="M170 202 Q185 196 200 202 Q215 208 230 202" fill="none" stroke="#f09020" stroke-width="2.5" opacity="0.5"/>
+  <!-- cumin seeds floating -->
+  <ellipse cx="155" cy="200" rx="4" ry="2" fill="#4a2800" opacity="0.7"/>
+  <ellipse cx="175" cy="203" rx="4" ry="2" fill="#4a2800" opacity="0.7"/>
+  <ellipse cx="225" cy="199" rx="4" ry="2" fill="#4a2800" opacity="0.7"/>
+  <ellipse cx="245" cy="202" rx="4" ry="2" fill="#4a2800" opacity="0.7"/>
+  <!-- lemon slice -->
+  <circle cx="235" cy="200" r="14" fill="#e8e040" opacity="0.8"/>
+  <path d="M235 186 L235 214 M221 200 L249 200" stroke="#c8c020" stroke-width="1"/>
+  <!-- olive oil drizzle -->
+  <path d="M155 196 Q180 190 200 196" fill="none" stroke="#f0c040" stroke-width="2" opacity="0.6"/>
+  <!-- steam -->
+  <path d="M185 175 Q190 155 183 142" fill="none" stroke="rgba(255,180,80,0.3)" stroke-width="3"/>
+  <path d="M210 170 Q215 150 208 137" fill="none" stroke="rgba(255,180,80,0.25)" stroke-width="3"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">شوربة العدس</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0800"/><stop offset="100%" stop-color="#1c1200"/></linearGradient>
+    <linearGradient id="ball" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d4880a"/><stop offset="100%" stop-color="#8a4800"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- plate -->
+  <ellipse cx="200" cy="258" rx="155" ry="35" fill="#c8b070"/>
+  <ellipse cx="200" cy="250" rx="145" ry="28" fill="#dcc080"/>
+  <!-- luqaimat balls - bottom row -->
+  <circle cx="130" cy="237" r="24" fill="url(#ball)" filter="url(#glow)"/>
+  <circle cx="130" cy="237" r="18" fill="#c07808"/>
+  <circle cx="130" cy="237" r="10" fill="#d48a10" opacity="0.5"/>
+  <circle cx="183" cy="235" r="24" fill="#b86808" filter="url(#glow)"/>
+  <circle cx="183" cy="235" r="18" fill="#c87a10"/>
+  <circle cx="240" cy="237" r="24" fill="url(#ball)" filter="url(#glow)"/>
+  <circle cx="240" cy="237" r="18" fill="#c07808"/>
+  <circle cx="293" cy="235" r="22" fill="#b86808" filter="url(#glow)"/>
+  <circle cx="293" cy="235" r="16" fill="#c87a10"/>
+  <!-- middle row -->
+  <circle cx="157" cy="210" r="23" fill="#c07008" filter="url(#glow)"/>
+  <circle cx="157" cy="210" r="17" fill="#d4820a"/>
+  <circle cx="213" cy="208" r="23" fill="url(#ball)" filter="url(#glow)"/>
+  <circle cx="213" cy="208" r="17" fill="#c07808"/>
+  <circle cx="268" cy="210" r="22" fill="#b86808" filter="url(#glow)"/>
+  <!-- honey drizzle over all -->
+  <path d="M110 220 Q150 208 200 215 Q250 222 295 210" fill="none" stroke="#e09010" stroke-width="5" opacity="0.75"/>
+  <path d="M125 235 Q165 225 210 232 Q255 239 285 228" fill="none" stroke="#d4800a" stroke-width="4" opacity="0.65"/>
+  <!-- sesame seeds -->
+  <ellipse cx="140" cy="228" rx="3" ry="5" fill="#f0e8b0" opacity="0.7" transform="rotate(20,140,228)"/>
+  <ellipse cx="195" cy="223" rx="3" ry="5" fill="#f0e8b0" opacity="0.7"/>
+  <ellipse cx="250" cy="226" rx="3" ry="5" fill="#f0e8b0" opacity="0.7" transform="rotate(-15,250,226)"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">لقيمات بالعسل</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#080a10"/><stop offset="100%" stop-color="#101520"/></linearGradient>
+    <linearGradient id="juice" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#dd1144"/><stop offset="100%" stop-color="#880822"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="rgba(255,255,255,0.15)"/><stop offset="50%" stop-color="rgba(255,255,255,0.05)"/><stop offset="100%" stop-color="rgba(255,255,255,0.1)"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- glass shadow -->
+  <ellipse cx="200" cy="268" rx="58" ry="10" fill="rgba(0,0,0,0.5)"/>
+  <!-- glass shape -->
+  <path d="M155 120 L145 258 Q200 272 255 258 L245 120 Z" fill="url(#juice)" filter="url(#glow)"/>
+  <!-- glass walls -->
+  <path d="M155 120 L145 258 Q200 272 255 258 L245 120 Z" fill="url(#glass)"/>
+  <!-- foam/bubbles on top -->
+  <ellipse cx="200" cy="122" rx="44" ry="10" fill="#ff4466" opacity="0.6"/>
+  <circle cx="180" cy="120" r="5" fill="#ff6688" opacity="0.5"/>
+  <circle cx="210" cy="118" r="4" fill="#ff6688" opacity="0.5"/>
+  <circle cx="195" cy="115" r="3" fill="#ff8899" opacity="0.5"/>
+  <!-- glass rim -->
+  <ellipse cx="200" cy="120" rx="44" ry="8" fill="rgba(255,255,255,0.2)"/>
+  <!-- glass highlight -->
+  <path d="M162 135 L158 240" stroke="rgba(255,255,255,0.2)" stroke-width="8" stroke-linecap="round"/>
+  <!-- pomegranate seeds floating -->
+  <circle cx="178" cy="180" r="4" fill="#ff2244" opacity="0.7"/>
+  <circle cx="215" cy="200" r="4" fill="#ff2244" opacity="0.7"/>
+  <circle cx="193" cy="215" r="4" fill="#ff2244" opacity="0.7"/>
+  <!-- pomegranate fruit on side -->
+  <circle cx="300" cy="200" r="45" fill="#cc1133" opacity="0.8"/>
+  <path d="M295 158 Q305 148 315 160" fill="#8a0820" stroke="#6a0615" stroke-width="2"/>
+  <circle cx="280" cy="190" r="6" fill="#ee2244" opacity="0.6"/>
+  <circle cx="315" cy="205" r="5" fill="#ee2244" opacity="0.6"/>
+  <!-- straw -->
+  <rect x="215" y="90" width="8" height="140" rx="4" fill="#ff9920" opacity="0.9"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="14" fill="#c9953a">عصير رمان طازج</text>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0800"/><stop offset="100%" stop-color="#1a1200"/></linearGradient>
+    <linearGradient id="qaimar" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f8f0e0"/><stop offset="100%" stop-color="#d4c088"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- plate shadow -->
+  <ellipse cx="200" cy="268" rx="145" ry="18" fill="rgba(0,0,0,0.4)"/>
+  <!-- plate -->
+  <ellipse cx="200" cy="252" rx="155" ry="40" fill="#c8b888"/>
+  <ellipse cx="200" cy="246" rx="145" ry="33" fill="#e0cc99"/>
+  <!-- bread (خبز الصاج) flat -->
+  <ellipse cx="200" cy="238" rx="130" ry="28" fill="#e8c878"/>
+  <!-- qaimar (cream) -->
+  <ellipse cx="200" cy="222" rx="110" ry="28" fill="url(#qaimar)" filter="url(#glow)"/>
+  <!-- cream texture folds -->
+  <path d="M110 220 Q145 210 180 220 Q215 230 250 220 Q270 215 290 218" fill="none" stroke="#e8e0cc" stroke-width="4" opacity="0.5"/>
+  <path d="M115 230 Q150 222 185 230 Q220 238 255 228" fill="none" stroke="#e8e0cc" stroke-width="3" opacity="0.4"/>
+  <!-- honey drizzle -->
+  <path d="M148 212 Q165 205 182 212 Q195 218 208 212 Q225 205 242 212" fill="none" stroke="#d4820a" stroke-width="4" opacity="0.85"/>
+  <path d="M160 222 Q185 215 210 222" fill="none" stroke="#e09010" stroke-width="3" opacity="0.7"/>
+  <!-- honey pool -->
+  <ellipse cx="200" cy="215" rx="35" ry="12" fill="#c87808" opacity="0.5"/>
+  <!-- pistachio bits -->
+  <circle cx="170" cy="210" r="5" fill="#5a8a20"/>
+  <circle cx="183" cy="205" r="4" fill="#6a9a28"/>
+  <circle cx="220" cy="208" r="5" fill="#5a8a20"/>
+  <circle cx="234" cy="212" r="4" fill="#6a9a28"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">كيمر مع العسل</text>
+</svg>
