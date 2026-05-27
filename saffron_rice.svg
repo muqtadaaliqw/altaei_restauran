@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a1200"/><stop offset="100%" stop-color="#2a1a00"/></linearGradient>
+    <linearGradient id="rice" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f0c040"/><stop offset="100%" stop-color="#c89020"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="220" rx="170" ry="58" fill="#d8c888"/>
+  <ellipse cx="200" cy="213" rx="160" ry="50" fill="#ead898"/>
+  <!-- golden saffron rice -->
+  <ellipse cx="200" cy="205" rx="145" ry="48" fill="url(#rice)" filter="url(#glow)"/>
+  <!-- rice grain texture -->
+  <line x1="155" y1="195" x2="162" y2="205" stroke="#f8d860" stroke-width="2" opacity="0.6"/>
+  <line x1="175" y1="190" x2="182" y2="200" stroke="#f8d860" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="193" x2="207" y2="203" stroke="#f8d860" stroke-width="2" opacity="0.6"/>
+  <line x1="220" y1="191" x2="227" y2="201" stroke="#f8d860" stroke-width="2" opacity="0.6"/>
+  <line x1="240" y1="196" x2="247" y2="206" stroke="#f8d860" stroke-width="2" opacity="0.6"/>
+  <!-- meat pieces on rice -->
+  <ellipse cx="165" cy="195" rx="25" ry="15" fill="#8a3010"/>
+  <ellipse cx="200" cy="190" rx="22" ry="13" fill="#7a2808"/>
+  <ellipse cx="235" cy="196" rx="22" ry="14" fill="#8a3010"/>
+  <!-- saffron strands on top -->
+  <line x1="180" y1="178" x2="190" y2="185" stroke="#ff8c00" stroke-width="2" opacity="0.8"/>
+  <line x1="210" y1="176" x2="215" y2="183" stroke="#ff8c00" stroke-width="2" opacity="0.8"/>
+  <!-- steam -->
+  <path d="M195 165 Q200 145 193 132" fill="none" stroke="rgba(255,200,100,0.3)" stroke-width="3"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="14" fill="#c9953a">تمن زعفران باللحم</text>
+</svg>

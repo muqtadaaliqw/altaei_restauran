@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#150a00"/>
+      <stop offset="100%" stop-color="#2a1500"/>
+    </linearGradient>
+    <linearGradient id="keb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9B3010"/>
+      <stop offset="50%" stop-color="#c05020"/>
+      <stop offset="100%" stop-color="#9B3010"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- plate -->
+  <ellipse cx="200" cy="235" rx="170" ry="50" fill="#e5ddd0"/>
+  <ellipse cx="200" cy="230" rx="160" ry="42" fill="#f2e8d8"/>
+  <!-- skewer stick -->
+  <line x1="50" y1="150" x2="350" y2="200" stroke="#b8860b" stroke-width="6" stroke-linecap="round"/>
+  <!-- kebab meat pieces -->
+  <ellipse cx="120" cy="163" rx="35" ry="22" fill="url(#keb)" transform="rotate(-10,120,163)"/>
+  <rect x="100" y="155" width="40" height="5" rx="2" fill="#7a2010" opacity="0.5"/>
+  <rect x="100" y="165" width="40" height="5" rx="2" fill="#7a2010" opacity="0.5"/>
+  <ellipse cx="185" cy="175" rx="35" ry="22" fill="#a03515" transform="rotate(-8,185,175)"/>
+  <rect x="165" y="167" width="40" height="5" rx="2" fill="#7a2010" opacity="0.5"/>
+  <rect x="165" y="177" width="40" height="5" rx="2" fill="#7a2010" opacity="0.5"/>
+  <ellipse cx="255" cy="187" rx="35" ry="22" fill="url(#keb)" transform="rotate(-8,255,187)"/>
+  <rect x="235" y="179" width="40" height="5" rx="2" fill="#7a2010" opacity="0.5"/>
+  <!-- veggies between kebabs -->
+  <circle cx="158" cy="170" r="10" fill="#cc4400" opacity="0.8"/>
+  <circle cx="225" cy="182" r="10" fill="#228b22" opacity="0.8"/>
+  <!-- garnish on plate -->
+  <ellipse cx="200" cy="235" rx="140" ry="25" fill="#e8e0cc" opacity="0.5"/>
+  <ellipse cx="140" cy="238" rx="20" ry="8" fill="#f0f0c0" opacity="0.7"/>
+  <ellipse cx="265" cy="238" rx="20" ry="8" fill="#d2c27a" opacity="0.8"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="16" fill="#c9953a">كباب عراقي</text>
+</svg>

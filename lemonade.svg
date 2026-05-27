@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#080e08"/><stop offset="100%" stop-color="#101a10"/></linearGradient>
+    <linearGradient id="drink" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d4ee60"/><stop offset="100%" stop-color="#88aa10"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="268" rx="55" ry="9" fill="rgba(0,0,0,0.4)"/>
+  <!-- tall glass -->
+  <path d="M160 105 L148 262 Q200 275 252 262 L240 105 Z" fill="url(#drink)" filter="url(#glow)"/>
+  <!-- glass walls highlight -->
+  <path d="M160 105 L148 262 Q200 275 252 262 L240 105 Z" fill="rgba(255,255,255,0.08)"/>
+  <!-- ice cubes -->
+  <rect x="170" y="155" width="28" height="28" rx="5" fill="rgba(255,255,255,0.35)" transform="rotate(10,170,155)"/>
+  <rect x="205" y="170" width="25" height="25" rx="5" fill="rgba(255,255,255,0.3)" transform="rotate(-8,205,170)"/>
+  <rect x="185" y="195" width="22" height="22" rx="5" fill="rgba(255,255,255,0.28)" transform="rotate(5,185,195)"/>
+  <!-- mint leaves -->
+  <ellipse cx="190" cy="115" rx="15" ry="8" fill="#2a9a20" opacity="0.9"/>
+  <ellipse cx="210" cy="112" rx="12" ry="7" fill="#3aaa28" opacity="0.9"/>
+  <!-- lemon slice on rim -->
+  <circle cx="245" cy="108" r="20" fill="#e8e040"/>
+  <circle cx="245" cy="108" r="15" fill="#eeec50"/>
+  <path d="M245 93 L245 123 M230 108 L260 108 M232 97 L258 119 M232 119 L258 97" stroke="#c8c020" stroke-width="1"/>
+  <!-- glass rim -->
+  <ellipse cx="200" cy="107" rx="40" ry="7" fill="rgba(255,255,255,0.2)"/>
+  <path d="M165 118 L161 230" stroke="rgba(255,255,255,0.15)" stroke-width="7" stroke-linecap="round"/>
+  <!-- straw -->
+  <rect x="182" y="85" width="7" height="130" rx="3.5" fill="#aaddff" opacity="0.7" transform="rotate(-5,182,85)"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="14" fill="#c9953a">ليمونادة بالنعناع</text>
+</svg>

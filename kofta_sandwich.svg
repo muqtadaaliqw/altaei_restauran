@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#100800"/><stop offset="100%" stop-color="#201000"/></linearGradient>
+    <linearGradient id="bread" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8c868"/><stop offset="100%" stop-color="#b89030"/></linearGradient>
+    <filter id="sh"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- bread bottom half -->
+  <rect x="60" y="225" width="280" height="28" rx="14" fill="#c89030"/>
+  <!-- kofta inside -->
+  <rect x="62" y="200" width="276" height="28" rx="8" fill="#7a2808" filter="url(#sh)"/>
+  <rect x="68" y="206" width="264" height="5" rx="2" fill="#5a1a04" opacity="0.5"/>
+  <rect x="68" y="217" width="264" height="5" rx="2" fill="#5a1a04" opacity="0.5"/>
+  <!-- veggies -->
+  <rect x="64" y="192" width="272" height="12" rx="5" fill="#4a9a20" opacity="0.8"/>
+  <ellipse cx="155" cy="196" rx="15" ry="7" fill="#dd3322" opacity="0.7"/>
+  <ellipse cx="245" cy="196" rx="15" ry="7" fill="#dd3322" opacity="0.7"/>
+  <!-- tahini sauce -->
+  <path d="M68 195 Q135 200 200 196 Q265 192 332 196" fill="none" stroke="#e8d870" stroke-width="2.5" opacity="0.7"/>
+  <!-- top bread half -->
+  <path d="M58 192 Q200 165 342 192 L342 202 Q200 202 58 202 Z" fill="url(#bread)" filter="url(#sh)"/>
+  <!-- sesame -->
+  <ellipse cx="160" cy="180" rx="5" ry="3" fill="#f0e090" transform="rotate(-10)"/>
+  <ellipse cx="200" cy="175" rx="5" ry="3" fill="#f0e090"/>
+  <ellipse cx="240" cy="179" rx="5" ry="3" fill="#f0e090" transform="rotate(10)"/>
+  <text x="200" y="293" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">ساندويش الكفتة</text>
+</svg>

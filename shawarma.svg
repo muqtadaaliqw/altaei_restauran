@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#150a00"/><stop offset="100%" stop-color="#2a1500"/></linearGradient>
+    <linearGradient id="bread" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8c070"/><stop offset="100%" stop-color="#b88a30"/></linearGradient>
+    <filter id="sh"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- wrap/sandwich -->
+  <!-- bread bottom -->
+  <ellipse cx="200" cy="240" rx="150" ry="30" fill="#c8902a"/>
+  <!-- filling layers -->
+  <rect x="80" y="170" width="240" height="75" rx="18" fill="url(#bread)" filter="url(#sh)"/>
+  <!-- lettuce visible -->
+  <path d="M90 210 Q120 198 160 210 Q200 222 240 210 Q270 200 310 210 L310 220 Q270 215 240 225 Q200 237 160 225 Q120 215 90 225 Z" fill="#4a9a20"/>
+  <!-- meat layer -->
+  <rect x="85" y="188" width="230" height="25" rx="8" fill="#9a4820"/>
+  <rect x="90" y="193" width="220" height="5" rx="2" fill="#7a3010" opacity="0.5"/>
+  <rect x="90" y="203" width="220" height="5" rx="2" fill="#7a3010" opacity="0.5"/>
+  <!-- tomato -->
+  <ellipse cx="145" cy="200" rx="18" ry="10" fill="#cc3322" opacity="0.8"/>
+  <ellipse cx="255" cy="200" rx="18" ry="10" fill="#cc3322" opacity="0.8"/>
+  <!-- sauce -->
+  <path d="M90 215 Q200 225 310 215" fill="none" stroke="#ffe8a0" stroke-width="3" opacity="0.7"/>
+  <!-- top bread -->
+  <path d="M80 172 Q200 150 320 172 Q320 190 200 190 Q80 190 80 172Z" fill="#d4a040"/>
+  <!-- sesame seeds -->
+  <circle cx="155" cy="165" r="3" fill="#f0d880" opacity="0.6"/>
+  <circle cx="200" cy="160" r="3" fill="#f0d880" opacity="0.6"/>
+  <circle cx="245" cy="163" r="3" fill="#f0d880" opacity="0.6"/>
+  <text x="200" y="292" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">شاورما عراقية</text>
+</svg>

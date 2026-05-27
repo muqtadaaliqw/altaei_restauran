@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a0808"/><stop offset="100%" stop-color="#1a0a08"/></linearGradient>
+    <linearGradient id="soup" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#cc3322"/><stop offset="100%" stop-color="#8a1a0a"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- bowl shadow -->
+  <ellipse cx="200" cy="260" rx="130" ry="18" fill="rgba(0,0,0,0.5)"/>
+  <!-- bowl base -->
+  <path d="M75 210 Q75 268 200 268 Q325 268 325 210 Z" fill="#d0c0a0"/>
+  <!-- bowl rim -->
+  <ellipse cx="200" cy="208" rx="126" ry="28" fill="#e8d8b0"/>
+  <ellipse cx="200" cy="204" rx="118" ry="22" fill="#f0e0c0"/>
+  <!-- soup surface -->
+  <ellipse cx="200" cy="204" rx="112" ry="20" fill="url(#soup)" filter="url(#glow)"/>
+  <!-- oil shimmer on soup -->
+  <ellipse cx="175" cy="200" rx="30" ry="8" fill="#ff5533" opacity="0.4" transform="rotate(-15,175,200)"/>
+  <ellipse cx="230" cy="202" rx="20" ry="6" fill="#ff6644" opacity="0.3"/>
+  <!-- herbs floating -->
+  <circle cx="160" cy="200" r="5" fill="#5aaa28"/>
+  <circle cx="240" cy="198" r="4" fill="#5aaa28"/>
+  <circle cx="200" cy="196" r="4" fill="#5aaa28"/>
+  <!-- steam wisps -->
+  <path d="M175 178 Q180 158 173 143" fill="none" stroke="rgba(255,200,180,0.35)" stroke-width="3"/>
+  <path d="M200 172 Q205 152 198 137" fill="none" stroke="rgba(255,200,180,0.3)" stroke-width="3"/>
+  <path d="M225 176 Q230 156 223 141" fill="none" stroke="rgba(255,200,180,0.28)" stroke-width="3"/>
+  <!-- bread on side -->
+  <rect x="295" y="220" width="40" height="30" rx="6" fill="#d4a840"/>
+  <rect x="298" y="224" width="34" height="6" rx="2" fill="#c09030" opacity="0.5"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">مرقة حمراء</text>
+</svg>

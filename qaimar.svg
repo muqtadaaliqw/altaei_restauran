@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0800"/><stop offset="100%" stop-color="#1a1200"/></linearGradient>
+    <linearGradient id="qaimar" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f8f0e0"/><stop offset="100%" stop-color="#d4c088"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- plate shadow -->
+  <ellipse cx="200" cy="268" rx="145" ry="18" fill="rgba(0,0,0,0.4)"/>
+  <!-- plate -->
+  <ellipse cx="200" cy="252" rx="155" ry="40" fill="#c8b888"/>
+  <ellipse cx="200" cy="246" rx="145" ry="33" fill="#e0cc99"/>
+  <!-- bread (خبز الصاج) flat -->
+  <ellipse cx="200" cy="238" rx="130" ry="28" fill="#e8c878"/>
+  <!-- qaimar (cream) -->
+  <ellipse cx="200" cy="222" rx="110" ry="28" fill="url(#qaimar)" filter="url(#glow)"/>
+  <!-- cream texture folds -->
+  <path d="M110 220 Q145 210 180 220 Q215 230 250 220 Q270 215 290 218" fill="none" stroke="#e8e0cc" stroke-width="4" opacity="0.5"/>
+  <path d="M115 230 Q150 222 185 230 Q220 238 255 228" fill="none" stroke="#e8e0cc" stroke-width="3" opacity="0.4"/>
+  <!-- honey drizzle -->
+  <path d="M148 212 Q165 205 182 212 Q195 218 208 212 Q225 205 242 212" fill="none" stroke="#d4820a" stroke-width="4" opacity="0.85"/>
+  <path d="M160 222 Q185 215 210 222" fill="none" stroke="#e09010" stroke-width="3" opacity="0.7"/>
+  <!-- honey pool -->
+  <ellipse cx="200" cy="215" rx="35" ry="12" fill="#c87808" opacity="0.5"/>
+  <!-- pistachio bits -->
+  <circle cx="170" cy="210" r="5" fill="#5a8a20"/>
+  <circle cx="183" cy="205" r="4" fill="#6a9a28"/>
+  <circle cx="220" cy="208" r="5" fill="#5a8a20"/>
+  <circle cx="234" cy="212" r="4" fill="#6a9a28"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">كيمر مع العسل</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1000"/>
+      <stop offset="100%" stop-color="#2d1a00"/>
+    </linearGradient>
+    <linearGradient id="chk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c87820"/>
+      <stop offset="100%" stop-color="#8b4500"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- plate -->
+  <ellipse cx="200" cy="220" rx="165" ry="55" fill="#e8ddd0"/>
+  <ellipse cx="200" cy="215" rx="155" ry="48" fill="#f5ede0"/>
+  <!-- chicken body -->
+  <ellipse cx="200" cy="190" rx="100" ry="65" fill="url(#chk)" filter="url(#glow)"/>
+  <!-- grill marks -->
+  <path d="M130 170 Q160 165 190 170 Q220 175 250 170" fill="none" stroke="#5a2a00" stroke-width="5" stroke-linecap="round"/>
+  <path d="M125 185 Q155 180 185 185 Q215 190 245 185" fill="none" stroke="#5a2a00" stroke-width="5" stroke-linecap="round"/>
+  <path d="M130 200 Q160 195 190 200 Q220 205 250 200" fill="none" stroke="#5a2a00" stroke-width="5" stroke-linecap="round"/>
+  <!-- chicken legs sticking out -->
+  <ellipse cx="140" cy="225" rx="18" ry="30" fill="#b86010" transform="rotate(-20,140,225)"/>
+  <circle cx="130" cy="245" r="10" fill="#8b4000"/>
+  <ellipse cx="260" cy="225" rx="18" ry="30" fill="#b86010" transform="rotate(20,260,225)"/>
+  <circle cx="270" cy="245" r="10" fill="#8b4000"/>
+  <!-- herbs/garnish -->
+  <ellipse cx="200" cy="175" rx="15" ry="8" fill="#4a7a20"/>
+  <circle cx="175" cy="195" r="6" fill="#6aaa30"/>
+  <circle cx="225" cy="195" r="6" fill="#6aaa30"/>
+  <!-- steam -->
+  <path d="M190 140 Q195 120 188 105" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="3"/>
+  <path d="M210 135 Q215 115 208 100" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="16" fill="#c9953a">دجاج مشوي</text>
+</svg>

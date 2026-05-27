@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1000"/><stop offset="100%" stop-color="#1a1800"/></linearGradient>
+    <linearGradient id="wrap" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8d898"/><stop offset="100%" stop-color="#c8b070"/></linearGradient>
+    <filter id="sh"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- bread wrap -->
+  <ellipse cx="200" cy="225" rx="155" ry="45" fill="url(#wrap)"/>
+  <!-- filling -->
+  <rect x="85" y="175" width="230" height="60" rx="20" fill="#c8b878" filter="url(#sh)"/>
+  <!-- falafel balls -->
+  <circle cx="145" cy="197" r="22" fill="#6b4a10"/>
+  <circle cx="145" cy="197" r="16" fill="#5a3a08"/>
+  <!-- falafel texture -->
+  <circle cx="137" cy="190" r="4" fill="#7a5418" opacity="0.5"/>
+  <circle cx="153" cy="192" r="3" fill="#7a5418" opacity="0.5"/>
+  <circle cx="142" cy="204" r="3" fill="#7a5418" opacity="0.5"/>
+  <circle cx="200" cy="195" r="22" fill="#6b4a10"/>
+  <circle cx="200" cy="195" r="16" fill="#5a3a08"/>
+  <circle cx="192" cy="188" r="4" fill="#7a5418" opacity="0.5"/>
+  <circle cx="208" cy="190" r="3" fill="#7a5418" opacity="0.5"/>
+  <circle cx="255" cy="198" r="22" fill="#6b4a10"/>
+  <circle cx="255" cy="198" r="16" fill="#5a3a08"/>
+  <!-- parsley/greens -->
+  <path d="M110 215 Q145 205 180 215 Q215 225 250 215 Q270 208 290 215" fill="none" stroke="#5aaa20" stroke-width="5" opacity="0.7"/>
+  <!-- tahini drizzle -->
+  <path d="M120 210 Q165 225 200 218 Q240 210 278 222" fill="none" stroke="#e8d870" stroke-width="3" opacity="0.6"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">فلافل بالخضروات</text>
+</svg>

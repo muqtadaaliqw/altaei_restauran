@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a1200"/><stop offset="100%" stop-color="#2d2000"/></linearGradient>
+    <linearGradient id="rice" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f5e090"/><stop offset="100%" stop-color="#d4b850"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- big serving dish -->
+  <ellipse cx="200" cy="215" rx="175" ry="65" fill="#d4c8a0"/>
+  <ellipse cx="200" cy="208" rx="165" ry="57" fill="#e8d880"/>
+  <!-- rice mound -->
+  <ellipse cx="200" cy="200" rx="150" ry="50" fill="url(#rice)"/>
+  <!-- rice texture dots -->
+  <ellipse cx="160" cy="195" rx="3" ry="5" fill="#f8f0b0" opacity="0.7" transform="rotate(20)"/>
+  <ellipse cx="185" cy="188" rx="3" ry="5" fill="#f8f0b0" opacity="0.7" transform="rotate(-15)"/>
+  <ellipse cx="210" cy="193" rx="3" ry="5" fill="#f8f0b0" opacity="0.7" transform="rotate(10)"/>
+  <ellipse cx="240" cy="190" rx="3" ry="5" fill="#f8f0b0" opacity="0.7" transform="rotate(-20)"/>
+  <ellipse cx="175" cy="205" rx="3" ry="5" fill="#f8f0b0" opacity="0.7"/>
+  <ellipse cx="225" cy="202" rx="3" ry="5" fill="#f8f0b0" opacity="0.7"/>
+  <!-- lamb on top -->
+  <ellipse cx="200" cy="175" rx="70" ry="40" fill="#8a3010" filter="url(#glow)"/>
+  <path d="M155 165 Q200 148 245 165" fill="#6a2008" opacity="0.7"/>
+  <ellipse cx="175" cy="170" rx="15" ry="10" fill="#a03818"/>
+  <ellipse cx="225" cy="170" rx="15" ry="10" fill="#a03818"/>
+  <!-- nuts on rice -->
+  <ellipse cx="145" cy="210" rx="8" ry="6" fill="#6b4226"/>
+  <ellipse cx="255" cy="207" rx="8" ry="6" fill="#7a5030"/>
+  <ellipse cx="195" cy="215" rx="8" ry="5" fill="#9a7040"/>
+  <!-- steam -->
+  <path d="M185 145 Q190 125 183 110" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2.5"/>
+  <path d="M215 138 Q220 118 213 103" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2.5"/>
+  <text x="200" y="292" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">قوزي على الأرز</text>
+</svg>

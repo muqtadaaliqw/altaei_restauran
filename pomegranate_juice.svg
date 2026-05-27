@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#080a10"/><stop offset="100%" stop-color="#101520"/></linearGradient>
+    <linearGradient id="juice" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#dd1144"/><stop offset="100%" stop-color="#880822"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="rgba(255,255,255,0.15)"/><stop offset="50%" stop-color="rgba(255,255,255,0.05)"/><stop offset="100%" stop-color="rgba(255,255,255,0.1)"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- glass shadow -->
+  <ellipse cx="200" cy="268" rx="58" ry="10" fill="rgba(0,0,0,0.5)"/>
+  <!-- glass shape -->
+  <path d="M155 120 L145 258 Q200 272 255 258 L245 120 Z" fill="url(#juice)" filter="url(#glow)"/>
+  <!-- glass walls -->
+  <path d="M155 120 L145 258 Q200 272 255 258 L245 120 Z" fill="url(#glass)"/>
+  <!-- foam/bubbles on top -->
+  <ellipse cx="200" cy="122" rx="44" ry="10" fill="#ff4466" opacity="0.6"/>
+  <circle cx="180" cy="120" r="5" fill="#ff6688" opacity="0.5"/>
+  <circle cx="210" cy="118" r="4" fill="#ff6688" opacity="0.5"/>
+  <circle cx="195" cy="115" r="3" fill="#ff8899" opacity="0.5"/>
+  <!-- glass rim -->
+  <ellipse cx="200" cy="120" rx="44" ry="8" fill="rgba(255,255,255,0.2)"/>
+  <!-- glass highlight -->
+  <path d="M162 135 L158 240" stroke="rgba(255,255,255,0.2)" stroke-width="8" stroke-linecap="round"/>
+  <!-- pomegranate seeds floating -->
+  <circle cx="178" cy="180" r="4" fill="#ff2244" opacity="0.7"/>
+  <circle cx="215" cy="200" r="4" fill="#ff2244" opacity="0.7"/>
+  <circle cx="193" cy="215" r="4" fill="#ff2244" opacity="0.7"/>
+  <!-- pomegranate fruit on side -->
+  <circle cx="300" cy="200" r="45" fill="#cc1133" opacity="0.8"/>
+  <path d="M295 158 Q305 148 315 160" fill="#8a0820" stroke="#6a0615" stroke-width="2"/>
+  <circle cx="280" cy="190" r="6" fill="#ee2244" opacity="0.6"/>
+  <circle cx="315" cy="205" r="5" fill="#ee2244" opacity="0.6"/>
+  <!-- straw -->
+  <rect x="215" y="90" width="8" height="140" rx="4" fill="#ff9920" opacity="0.9"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="14" fill="#c9953a">عصير رمان طازج</text>
+</svg>

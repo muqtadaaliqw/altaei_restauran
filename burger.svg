@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#100800"/><stop offset="100%" stop-color="#1e1000"/></linearGradient>
+    <linearGradient id="bun" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d49040"/><stop offset="100%" stop-color="#a06020"/></linearGradient>
+    <filter id="sh"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- shadow -->
+  <ellipse cx="200" cy="260" rx="145" ry="22" fill="rgba(0,0,0,0.4)"/>
+  <!-- bottom bun -->
+  <rect x="68" y="232" width="264" height="30" rx="15" fill="#b87828"/>
+  <!-- lettuce -->
+  <path d="M65 228 Q120 212 200 220 Q280 228 335 216 L335 233 Q280 243 200 238 Q120 233 65 245 Z" fill="#4aaa20"/>
+  <!-- tomato -->
+  <rect x="70" y="214" width="260" height="16" rx="5" fill="#dd3322" opacity="0.9"/>
+  <!-- cheese -->
+  <rect x="72" y="204" width="256" height="13" rx="4" fill="#f0c030"/>
+  <!-- patty -->
+  <rect x="74" y="184" width="252" height="24" rx="10" fill="#5a1a08" filter="url(#sh)"/>
+  <rect x="78" y="189" width="244" height="5" rx="2" fill="#4a1208" opacity="0.6"/>
+  <rect x="78" y="199" width="244" height="5" rx="2" fill="#4a1208" opacity="0.6"/>
+  <!-- top bun -->
+  <path d="M70 185 Q200 140 330 185 L330 200 Q200 200 70 200 Z" fill="url(#bun)" filter="url(#sh)"/>
+  <!-- sesame seeds on bun -->
+  <ellipse cx="155" cy="162" rx="6" ry="4" fill="#f0d898" transform="rotate(-15,155,162)"/>
+  <ellipse cx="200" cy="153" rx="6" ry="4" fill="#f0d898"/>
+  <ellipse cx="245" cy="162" rx="6" ry="4" fill="#f0d898" transform="rotate(15,245,162)"/>
+  <ellipse cx="178" cy="158" rx="5" ry="3" fill="#f0d898" transform="rotate(-10)"/>
+  <ellipse cx="222" cy="156" rx="5" ry="3" fill="#f0d898" transform="rotate(10)"/>
+  <text x="200" y="294" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="14" fill="#c9953a">برغر الطائي</text>
+</svg>

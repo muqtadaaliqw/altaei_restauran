@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0800"/><stop offset="100%" stop-color="#1c1200"/></linearGradient>
+    <linearGradient id="ball" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d4880a"/><stop offset="100%" stop-color="#8a4800"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- plate -->
+  <ellipse cx="200" cy="258" rx="155" ry="35" fill="#c8b070"/>
+  <ellipse cx="200" cy="250" rx="145" ry="28" fill="#dcc080"/>
+  <!-- luqaimat balls - bottom row -->
+  <circle cx="130" cy="237" r="24" fill="url(#ball)" filter="url(#glow)"/>
+  <circle cx="130" cy="237" r="18" fill="#c07808"/>
+  <circle cx="130" cy="237" r="10" fill="#d48a10" opacity="0.5"/>
+  <circle cx="183" cy="235" r="24" fill="#b86808" filter="url(#glow)"/>
+  <circle cx="183" cy="235" r="18" fill="#c87a10"/>
+  <circle cx="240" cy="237" r="24" fill="url(#ball)" filter="url(#glow)"/>
+  <circle cx="240" cy="237" r="18" fill="#c07808"/>
+  <circle cx="293" cy="235" r="22" fill="#b86808" filter="url(#glow)"/>
+  <circle cx="293" cy="235" r="16" fill="#c87a10"/>
+  <!-- middle row -->
+  <circle cx="157" cy="210" r="23" fill="#c07008" filter="url(#glow)"/>
+  <circle cx="157" cy="210" r="17" fill="#d4820a"/>
+  <circle cx="213" cy="208" r="23" fill="url(#ball)" filter="url(#glow)"/>
+  <circle cx="213" cy="208" r="17" fill="#c07808"/>
+  <circle cx="268" cy="210" r="22" fill="#b86808" filter="url(#glow)"/>
+  <!-- honey drizzle over all -->
+  <path d="M110 220 Q150 208 200 215 Q250 222 295 210" fill="none" stroke="#e09010" stroke-width="5" opacity="0.75"/>
+  <path d="M125 235 Q165 225 210 232 Q255 239 285 228" fill="none" stroke="#d4800a" stroke-width="4" opacity="0.65"/>
+  <!-- sesame seeds -->
+  <ellipse cx="140" cy="228" rx="3" ry="5" fill="#f0e8b0" opacity="0.7" transform="rotate(20,140,228)"/>
+  <ellipse cx="195" cy="223" rx="3" ry="5" fill="#f0e8b0" opacity="0.7"/>
+  <ellipse cx="250" cy="226" rx="3" ry="5" fill="#f0e8b0" opacity="0.7" transform="rotate(-15,250,226)"/>
+  <text x="200" y="295" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">لقيمات بالعسل</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a1a08"/><stop offset="100%" stop-color="#182a10"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="225" rx="165" ry="52" fill="#e0d8c8"/>
+  <ellipse cx="200" cy="219" rx="155" ry="44" fill="#ece4d0"/>
+  <!-- dolma rolls -->
+  <ellipse cx="130" cy="195" rx="30" ry="18" fill="#3a7a20" filter="url(#glow)"/>
+  <ellipse cx="130" cy="196" rx="22" ry="12" fill="#4a9a28"/>
+  <line x1="108" y1="195" x2="152" y2="195" stroke="#2a5a15" stroke-width="2"/>
+  <ellipse cx="200" cy="188" rx="30" ry="18" fill="#2d6a18" filter="url(#glow)"/>
+  <ellipse cx="200" cy="189" rx="22" ry="12" fill="#3d8a22"/>
+  <line x1="178" y1="188" x2="222" y2="188" stroke="#1d4a10" stroke-width="2"/>
+  <ellipse cx="270" cy="195" rx="30" ry="18" fill="#3a7a20" filter="url(#glow)"/>
+  <ellipse cx="270" cy="196" rx="22" ry="12" fill="#4a9a28"/>
+  <line x1="248" y1="195" x2="292" y2="195" stroke="#2a5a15" stroke-width="2"/>
+  <!-- second row -->
+  <ellipse cx="163" cy="213" rx="28" ry="16" fill="#3d7a22"/>
+  <ellipse cx="237" cy="210" rx="28" ry="16" fill="#3d7a22"/>
+  <!-- tomato sauce -->
+  <ellipse cx="200" cy="228" rx="100" ry="18" fill="#cc4422" opacity="0.5"/>
+  <text x="200" y="288" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">دولمة عراقية</text>
+</svg>

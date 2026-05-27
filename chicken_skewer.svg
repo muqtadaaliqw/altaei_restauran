@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d0d08"/><stop offset="100%" stop-color="#1a1500"/></linearGradient>
+    <linearGradient id="chk" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d4a020"/><stop offset="100%" stop-color="#8a5a00"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <!-- plate -->
+  <ellipse cx="200" cy="230" rx="165" ry="52" fill="#e5ddd0"/>
+  <ellipse cx="200" cy="225" rx="155" ry="44" fill="#f0e8d8"/>
+  <!-- 3 skewer sticks side by side -->
+  <line x1="100" y1="125" x2="300" y2="245" stroke="#8b6914" stroke-width="5" stroke-linecap="round"/>
+  <line x1="130" y1="115" x2="330" y2="235" stroke="#8b6914" stroke-width="5" stroke-linecap="round"/>
+  <line x1="70" y1="135" x2="270" y2="255" stroke="#8b6914" stroke-width="5" stroke-linecap="round"/>
+  <!-- chicken pieces -->
+  <ellipse cx="155" cy="165" rx="28" ry="18" fill="url(#chk)" filter="url(#glow)" transform="rotate(-35,155,165)"/>
+  <ellipse cx="195" cy="175" rx="28" ry="18" fill="#c89018" filter="url(#glow)" transform="rotate(-35,195,175)"/>
+  <ellipse cx="235" cy="195" rx="28" ry="18" fill="url(#chk)" filter="url(#glow)" transform="rotate(-35,235,195)"/>
+  <!-- lemon -->
+  <ellipse cx="90" cy="228" rx="22" ry="15" fill="#e8e040"/>
+  <line x1="90" y1="215" x2="90" y2="241" stroke="#c8c020" stroke-width="1"/>
+  <line x1="77" y1="228" x2="103" y2="228" stroke="#c8c020" stroke-width="1"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arabic Typesetting,Traditional Arabic,serif" font-size="15" fill="#c9953a">سيخ الدجاج</text>
+</svg>
