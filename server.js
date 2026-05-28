@@ -11,7 +11,7 @@ const fs   = require('fs');
 const path = require('path');
 const url  = require('url');
 
-const PORT     = process.env.PORT || 5000;
+const PORT     = process.env.PORT || 5000;  // Railway يعطي PORT تلقائياً
 const DB_FILE  = path.join(__dirname, 'licenses.json');
 const DEV_PASS = 'dev@muqtada2025'; // ← غيّرها
 
@@ -167,7 +167,7 @@ const server = http.createServer(async(req,res)=>{
     let filePath = path.join(__dirname, parsed.pathname==='/'?'index.html':parsed.pathname);
     if(!fs.existsSync(filePath)) return json(res,404,{ok:false,msg:'غير موجود'});
     const ext=path.extname(filePath);
-    const mime={'html':'text/html','js':'application/javascript','css':'text/css','json':'application/json'}[ext.slice(1)]||'text/plain';
+    const mime={'html':'text/html','js':'application/javascript','css':'text/css','json':'application/json','svg':'image/svg+xml','png':'image/png','jpg':'image/jpeg','ico':'image/x-icon'}[ext.slice(1)]||'text/plain';
     cors(res);
     res.writeHead(200,{'Content-Type':mime+';charset=utf-8'});
     fs.createReadStream(filePath).pipe(res);
