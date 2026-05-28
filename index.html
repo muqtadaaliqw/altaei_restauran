@@ -731,7 +731,7 @@ footer{background:var(--text-dark);color:rgba(255,255,255,.6);padding:3rem 1.5re
 /* ══════════════════════════════════════════════════════
    نظام الترخيص — يتحقق من السيرفر
 ══════════════════════════════════════════════════════ */
-const _API   = 'https://altaeirestauran-production.up.railway.app';  // عنوان السيرفر
+const _API   = window.location.origin;  // يعمل محلياً وعلى الإنترنت تلقائياً
 const _K_KEY = 'tai_lic_key';           // المفتاح المحفوظ محلياً
 const TLBL_S = {daily:'يومي',monthly:'شهري','2months':'شهرين','3months':'3 أشهر','6months':'6 أشهر',yearly:'سنوي'};
 
@@ -756,48 +756,69 @@ function unlockSite(data){
 
 /* ── التحقق من السيرفر ── */
 async function checkLicenseOnline(){
-  const key = localStorage.getItem(_K_KEY);
-  if(!key){ lockSite('أدخل مفتاح التفعيل للبدء.'); return; }
   try{
-    const r = await fetch(`${_API}/api/check?key=${encodeURIComponent(key)}`);
-    const data = await r.json();
-    if(data.ok){ unlockSite(data); }
-    else{ localStorage.removeItem(_K_KEY); lockSite(data.msg); }
+    /* أولاً: تحقق من حالة الموقع العامة — بدون مفتاح */
+    const statusRes = await fetch(`${_API}/api/status`,{signal:AbortSignal.timeout(6000)});
+    const status = await statusRes.json();
+    if(status.ok && status.open){
+      /* الموقع مفتوح — ادخل مباشرة بدون مفتاح */
+      unlockSite({daysLeft:status.daysLeft});
+      return;
+    }
+    if(status.ok && !status.open){
+      /* الاشتراك منتهي أو موقوف */
+      lockSite('الموقع موقوف مؤقتاً. للاستفسار تواصل مع المطوّر.');
+      return;
+    }
   }catch{
-    /* السيرفر غير متاح — استخدم آخر حالة محفوظة */
+    /* السيرفر ما رد — جرب المفتاح المحفوظ */
     const cached=localStorage.getItem('tai_lic_ok');
     const cachedExp=localStorage.getItem('tai_lic_exp');
     if(cached==='1' && cachedExp && new Date(cachedExp)>new Date()){
       unlockSite(null);
-      showToast('⚠️ تعمل بدون اتصال بالسيرفر');
-    }else{
-      lockSite('تعذّر الاتصال بالسيرفر. تأكد من الاتصال.');
+      return;
     }
+    lockSite('تعذّر الاتصال بالسيرفر.');
   }
 }
 
-/* ── تفعيل مفتاح من المستخدم ── */
+
 async function activateLicense(){
   const key=document.getElementById('licKeyInput').value.trim().toUpperCase();
   const errEl=document.getElementById('licErr');
   if(!key||key.length<19){errEl.textContent='المفتاح غير مكتمل.';return;}
   errEl.textContent='جاري التحقق...';
+  /* تحقق من قاعدة البيانات المحلية أولاً */
+  const localDB=JSON.parse(localStorage.getItem('tai_dev_licenses')||'[]');
+  const rec=localDB.find(r=>r.key===key);
+  if(rec){
+    if(rec.disabled){errEl.textContent='هذا الاشتراك موقوف. تواصل مع المطوّر.';return;}
+    if(new Date(rec.expiry)<new Date()){errEl.textContent='انتهى هذا الاشتراك. يرجى التجديد.';return;}
+    const daysLeft=Math.ceil((new Date(rec.expiry)-new Date())/864e5);
+    localStorage.setItem(_K_KEY,key);
+    localStorage.setItem('tai_lic_ok','1');
+    localStorage.setItem('tai_lic_exp',rec.expiry);
+    errEl.textContent='';
+    document.getElementById('licInfo').innerHTML=`✅ تم التفعيل! | باقي: <strong>${daysLeft} يوم</strong>`;
+    document.getElementById('licInfo').style.display='block';
+    setTimeout(()=>unlockSite({daysLeft}), 800);
+    return;
+  }
+  /* محاولة السيرفر (اختياري) */
   try{
-    const r=await fetch(`${_API}/api/check?key=${encodeURIComponent(key)}`);
+    const r=await fetch(`${_API}/api/check?key=${encodeURIComponent(key)}`,{signal:AbortSignal.timeout(4000)});
     const data=await r.json();
     if(data.ok){
-      localStorage.setItem(_K_KEY, key);
+      localStorage.setItem(_K_KEY,key);
       localStorage.setItem('tai_lic_ok','1');
-      localStorage.setItem('tai_lic_exp', data.expiry);
+      localStorage.setItem('tai_lic_exp',data.expiry);
       errEl.textContent='';
       document.getElementById('licInfo').innerHTML=`✅ تم التفعيل! | باقي: <strong>${data.daysLeft} يوم</strong>`;
       document.getElementById('licInfo').style.display='block';
-      setTimeout(()=>unlockSite(data), 800);
-    }else{
-      errEl.textContent=data.msg;
-    }
+      setTimeout(()=>unlockSite(data),800);
+    }else{errEl.textContent=data.msg;}
   }catch{
-    errEl.textContent='تعذّر الاتصال بالسيرفر.';
+    errEl.textContent='المفتاح غير موجود في القاعدة.';
   }
 }
 
@@ -870,7 +891,7 @@ function renderMenu(cat){
     <div class="menu-card" style="animation-delay:${idx*0.04}s">
       <div class="card-img-wrap">
         ${item.img
-          ? `<img src="images/${item.img}" alt="${item.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="card-emoji-bg" style="display:none">${item.emoji}</div>`
+          ? `<img src="${item.img}" alt="${item.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="card-emoji-bg" style="display:none">${item.emoji}</div>`
           : `<div class="card-emoji-bg">${item.emoji}</div>`}
         ${item.badge?`<span class="card-badge ${item.bc}">${item.badge}</span>`:''}
       </div>

@@ -64,6 +64,17 @@ function body(req){
 const routes = {
 
   /* ─ الموقع يتحقق من مفتاحه ─ */
+  'GET /api/status': (req,res)=>{
+    /* حالة الموقع العامة — بدون مفتاح */
+    const db=readDB();
+    const now=new Date();
+    const active=db.find(r=>!r.disabled && new Date(r.expiry)>now);
+    if(active){
+      const daysLeft=Math.ceil((new Date(active.expiry)-now)/864e5);
+      return json(res,200,{ok:true,open:true,daysLeft,client:active.client});
+    }
+    return json(res,200,{ok:true,open:false,msg:'الموقع موقوف أو لا يوجد اشتراك فعّال'});
+  },
   'GET /api/check': (req,res,q)=>{
     const key=(q.key||'').toUpperCase().trim();
     if(!key) return json(res,400,{ok:false,msg:'مفتاح مفقود'});
