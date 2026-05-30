@@ -1,12 +1,23 @@
 {
-  "name": "altaei-restaurant",
-  "version": "1.0.0",
-  "description": "مطعم الطائي - نظام إدارة الاشتراكات",
+  "name": "menu-miraq-system",
+  "version": "2.0.0",
+  "description": "Menu Miraq — نظام إدارة المطاعم المتكامل",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "engines": {
     "node": ">=16.0.0"
-  }
+  },
+  "keywords": [
+    "restaurant",
+    "menu",
+    "orders",
+    "qr",
+    "dashboard",
+    "iraq"
+  ],
+  "author": "Muqtada Ali",
+  "license": "MIT"
 }
